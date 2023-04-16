@@ -50,9 +50,9 @@ O código deve compilar sem erros ou *warnings* utilizando o **`gcc`** com as se
 
 ### Opção 1:
 
-A opção `1 - Analise sintatica` deve começar por pedir ao usuário informações sobre o tamanho da stack que será utilizada para a análise sintática. O que deve ser feito através da seguinte mensagem: `Informe o tamanho da stack: `
+A opção `1 - Analise sintatica` deve começar por pedir ao utilizador informações sobre o tamanho da stack que será utilizada para a análise sintática. O que deve ser feito através da seguinte mensagem: `Informe o tamanho da stack: `
 
-Em seguida, um ficheiro no formato `JSON` com o nome `test.json` para realizar a análise sintática será lido. O programa deve verificar se o ficheiro existe e se está bem formado e exibir a mensagem apropriada para os seguintes casos:
+Em seguida, o programa dever perguntar qual o nome do ficheiro no formato `JSON` para realizar a análise sintática será lido, fazendo a pergunta `Informe o nome do ficheiro a analisar:`. O programa deve verificar se o ficheiro existe e se está bem formado e exibir a mensagem apropriada para os seguintes casos:
 
 - `FBF - Ficheiro bem formado!` se o ficheiro estiver bem formado
 - `FMF - Ficheiro mal formado!` caso contrário
@@ -96,6 +96,7 @@ A opção `2 - Sair` deve permitir ao utilizador sair do programa.
 3 - Sair
 1
 Informe o tamanho da stack: 10
+Informe o nome do ficheiro a analisar: test.json
 push {
 push {
 push [
@@ -110,10 +111,11 @@ FBF - Ficheiro bem formado!
 
 - Exemplo 2
 ```console
- 1 - Analise sintatica
- 2 - Sair
+1 - Analise sintatica
+2 - Sair
 1
- Informe o tamanho da stack: 3
+Informe o tamanho da stack: 3
+Informe o nome do ficheiro a analisar: experiencia.json
 push }
 push "
 pop  "
