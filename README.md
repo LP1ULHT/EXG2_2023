@@ -93,7 +93,7 @@ A opção `2 - Sair` deve permitir ao utilizador sair do programa.
 - Exemplo 1
 ```console
 1 - Analise sintatica
-3 - Sair
+2 - Sair
 1
 Informe o tamanho da stack: 10
 Informe o nome do ficheiro a analisar: test.json
