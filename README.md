@@ -4,7 +4,9 @@ Exercício em Grupo 2 - Analisador sintático
 
 ## Descrição
 
-Escreva um programa em C que realiza a análise sintática de um ficheiro no formato [JavaScript Object Notation - JSON](https://pt.wikipedia.org/wiki/JSON "JSON - Wikipedia").
+Corrija (se tiver erros) um programa em C desenvolvido com "Esperto Artificial" feito pelo ChaladoGPT!
+
+O programa a funcionar corretamente realiza a análise sintática de um ficheiro no formato [JavaScript Object Notation - JSON](https://pt.wikipedia.org/wiki/JSON "JSON - Wikipedia").
 
 Este tipo de ficheiro apresenta a seguinte estrutura:
 
