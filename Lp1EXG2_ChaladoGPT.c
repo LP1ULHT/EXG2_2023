@@ -14,7 +14,7 @@
 
 #define MENU "\n 1 - Analise sintatica\n 2 - Sair\n"
 #define SAIR 2
-#define MSG_FNE "FNE - Ficheiro não existe!\n"
+#define MSG_FNE "FNE - Ficheiro nao existe!\n"
 #define MSG_FBF "\nFBF - Ficheiro bem formado!\n"
 #define MSG_FMF "\nFMF - Ficheiro mal formado!\n"
 

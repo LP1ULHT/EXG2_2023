@@ -56,7 +56,7 @@ Em seguida, o programa dever perguntar qual o nome do ficheiro no formato `JSON`
 
 - `FBF - Ficheiro bem formado!` se o ficheiro estiver bem formado
 - `FMF - Ficheiro mal formado!` caso contrário
-- `FNE - Ficheiro não existe!` se o ficheiro não existir
+- `FNE - Ficheiro nao existe!` se o ficheiro não existir
 
 Desta forma, quando os símbolos que delimitam o escopo de um bloco de código "abrirem", isto é ao encontrar os símbolos `{` e `[` realizam-se as seguintes operações:
 
