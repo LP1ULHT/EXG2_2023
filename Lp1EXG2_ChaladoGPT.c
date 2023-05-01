@@ -18,7 +18,7 @@
 #define MSG_FBF "\nFBF - Ficheiro bem formado!\n"
 #define MSG_FMF "\nFMF - Ficheiro mal formado!\n"
 
-#define MSG_ERRO_TIPO "Erro: Tipo desconhecido\n"
+#define MSG_ERRO_TIPO " "
 #define MSG_ERR2_UNDERFLOW "\nerro 02: stack underflow!\n"
 #define MSG_ERR1_UNDERFLOW "\nerro 01: stack overflow!\n"
 
@@ -113,6 +113,7 @@ void printElement(Elemento_json elem)
         break;
       
       /* Caso nao seja um tipo identificado imprime um ponto interrogacao */
+      case elemento_json_ERRO:
       default:
         printf("?");
     }
@@ -245,6 +246,7 @@ contadorElementos parse(char str, contadorElementos x, int nomesemsentido)
   case elemento_json_OBJECT_END:
   cont.pilha_OBJECT = pop(cont.pilha_OBJECT, nomecemsentido);
   break;
+  case elemento_json_ERRO:  
   default:
   printf (MSG_ERRO_TIPO);
   }
