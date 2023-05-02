@@ -60,13 +60,13 @@ Em seguida, o programa dever perguntar qual o nome do ficheiro no formato `JSON`
 - `FMF - Ficheiro mal formado!` caso contrário
 - `FNE - Ficheiro nao existe!` se o ficheiro não existir
 
-Desta forma, quando os símbolos que delimitam o escopo de um bloco de código "abrirem", isto é ao encontrar os símbolos `{` e `[` realizam-se as seguintes operações:
+Desta forma, quando os símbolos que delimitam o escopo de um bloco de código "abrirem", isto é ao encontrar os símbolos `}` e `[` realizam-se as seguintes operações:
 
-* `push` do símbolo `{` ou `[` na stack, imprimindo no ecrã `push {` ou `push [`
+* `push` do símbolo `}` ou `[` na stack, imprimindo no ecrã `push }` ou `push [`
 
 Quando for encontrado um símbolo que fecha um bloco de código, isto é, `}` ou `]`, deve ser efetuada a seguinte operação:
 
-* `pop` do símbolo `}` ou `]`, imprimindo no ecrã no seguinte formato: `pop }` ou `pop ]`
+* `pop` do símbolo `{` ou `]`, imprimindo no ecrã no seguinte formato: `pop {` ou `pop ]`
 
 ### Erros:
 
@@ -90,6 +90,7 @@ A opção `2 - Sair` deve permitir ao utilizador sair do programa.
 
 - Organizar e modularizar seu código fazendo o uso de funções
 - Atenção para a exigência de leitura da **dimensão da stack**
+- Atencao que push e feito quando se fecha a chaveta, e pop quando abre, e mesmo assim o programa funciona
 
 # Exemplo de execução:
 
@@ -100,12 +101,12 @@ A opção `2 - Sair` deve permitir ao utilizador sair do programa.
 1
 Informe o tamanho da stack: 10
 Informe o nome do ficheiro a analisar: test.json
-push {
-push {
+push }
+push }
 push [
 pop  ]
-pop  }
-pop  }
+pop  {
+pop  {
 FBF - Ficheiro bem formado!
 1 - Analise sintatica
 2 - Sair
@@ -119,16 +120,16 @@ FBF - Ficheiro bem formado!
 1
 Informe o tamanho da stack: 3
 Informe o nome do ficheiro a analisar: experiencia.json
-push {
+push }
 push "
 pop  "
-push {
+push }
 push "
 pop  "
-push {
+push }
 push "
 pop  "
-push {
+push }
 erro 01: stack overflow!
 FMF - Ficheiro mal formado!
 
