@@ -106,10 +106,10 @@ void printElement(Elemento_json elem)
         break;
 
       case elemento_json_OBJECT:
-        printf("}");
+        printf("{");
         break;
       case elemento_json_OBJECT_END:
-        printf("{");
+        printf("}");
         break;
       
       /* Caso nao seja um tipo identificado imprime um ponto interrogacao */
