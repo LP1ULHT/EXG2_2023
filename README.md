@@ -62,11 +62,11 @@ Em seguida, o programa dever perguntar qual o nome do ficheiro no formato `JSON`
 
 Desta forma, quando os símbolos que delimitam o escopo de um bloco de código "abrirem", isto é ao encontrar os símbolos `{` e `[` realizam-se as seguintes operações:
 
-* `push` do símbolo `{` ou `[` na stack
+* `push` do símbolo `{` ou `[` na stack, imprimindo no ecrã `push {` ou `push [`
 
 Quando for encontrado um símbolo que fecha um bloco de código, isto é, `}` ou `]`, deve ser efetuada a seguinte operação:
 
-* `pop` do símbolo `{` ou `[` com o indicativo desta operação no ecrã no seguinte formato: `pop {` ou `pop [`
+* `pop` do símbolo `}` ou `]`, imprimindo no ecrã no seguinte formato: `pop }` ou `pop ]`
 
 ### Erros:
 
