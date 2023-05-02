@@ -75,6 +75,8 @@ Quando, durante a execução **desta opção** no programa, ocorrerem os seguint
 - `push` e a `stack` estiver com sua **capacidade esgotada**, imprima `erro 01: stack overflow!` e imprime `FMF - Ficheiro mal formado!` e volta ao menu principal.
 - `pop` e a `stack` estiver **vazia**, imprima `erro 02: stack underflow!` e imprime `FMF - Ficheiro mal formado!` e volta ao menu principal.
 
+Nota: Existe um stack por elemento, neste caso temos duas stacks, uma para `[` e outro para `}`. 
+
 ---
 
 
