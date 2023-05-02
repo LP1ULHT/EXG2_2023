@@ -118,16 +118,16 @@ FBF - Ficheiro bem formado!
 1
 Informe o tamanho da stack: 3
 Informe o nome do ficheiro a analisar: experiencia.json
-push }
+push {
 push "
 pop  "
-push }
+push {
 push "
 pop  "
-push }
+push {
 push "
 pop  "
-push }
+push {
 erro 01: stack overflow!
 FMF - Ficheiro mal formado!
 
