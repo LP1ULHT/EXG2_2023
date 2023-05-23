@@ -274,7 +274,7 @@ void detetaErros (contadorElementos resultado)
 int detetaStackOverflow (contadorElementos resultado)
 {
   /* ERRO 1 - Pilha quando ta em overflow fica com valor -1 " */
-  /* CORRETO SERIA igular valores com zero, e nao -1 */
+  /* CORRETO SERIA igualar valores com -1, e nao com zero */
 
   if(
 (resultado.pilha_ARRAY == 0) ||
